@@ -4,22 +4,20 @@ Proyek ini merupakan bagian dari proses seleksi teknis Basecamp, dengan memilih 
 
 ## Tujuan
 
-Membuat alur onboarding interaktif dan efisien bagi penulis baru di platform buletin.co, agar mereka dapat memahami cara kerja platform serta langsung mulai menulis dengan nyaman.
+Membuat alur onboarding interaktif dan efisien bagi penulis baru di platform buletin.co.
 
 ## Teknologi yang Digunakan
 
 - React.js dengan TypeScript
 - Vite sebagai build tool
 - Tailwind CSS untuk styling
-- React Router untuk navigasi antar halaman
-- ESLint untuk menjaga konsistensi kode
+- Zustand untuk state management
+- Framer-motion untuk animasi
 
 ## Fitur Utama
 
-- Alur onboarding multi-step yang interaktif
+- Alur onboarding multi-step yang interaktif dengan animasi
 - Komponen UI yang modular dan dapat digunakan kembali
-- Navigasi yang mudah dan user-friendly
-- Simulasi penyimpanan progres pengguna (misalnya dengan localStorage)
 
 ## Cara Menjalankan Proyek
 
