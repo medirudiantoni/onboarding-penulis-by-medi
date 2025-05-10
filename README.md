@@ -1,54 +1,73 @@
-# React + TypeScript + Vite
+# Onboarding Penulis untuk Buletin.co
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyek ini merupakan bagian dari proses seleksi teknis Basecamp, dengan memilih opsi tantangan nomor 2: "Mendesain alur onboarding untuk penulis buletin.co".
 
-Currently, two official plugins are available:
+## Tujuan
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Membuat alur onboarding interaktif dan efisien bagi penulis baru di platform buletin.co, agar mereka dapat memahami cara kerja platform serta langsung mulai menulis dengan nyaman.
 
-## Expanding the ESLint configuration
+## Teknologi yang Digunakan
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React.js dengan TypeScript
+- Vite sebagai build tool
+- Tailwind CSS untuk styling
+- React Router untuk navigasi antar halaman
+- ESLint untuk menjaga konsistensi kode
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Fitur Utama
+
+- Alur onboarding multi-step yang interaktif
+- Komponen UI yang modular dan dapat digunakan kembali
+- Navigasi yang mudah dan user-friendly
+- Simulasi penyimpanan progres pengguna (misalnya dengan localStorage)
+
+## Cara Menjalankan Proyek
+
+1. Klon repositori ini:
+```bash
+git clone https://github.com/medirudiantoni/onboarding-penulis-by-medi.git
+cd onboarding-penulis-by-medi
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Instal dependensi:
+```bash
+npm install
+```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3. Jalankan proyek:
+```bash
+npm run dev
+```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+4. Akses aplikasi di browser:
+- Buka `localhost:5173` untuk melihat aplikasi.
+
+## Demo Langsung
+
+Aplikasi ini juga telah dideploy dan dapat diakses melalui link berikut:
+
+[onboarding-penulis-by-medi.vercel.app](https://onboarding-penulis-by-medi.vercel.app/)
+
+## Struktur Folder
+```
+├── public/
+├── src/
+│   ├── assets/
+│   │   └── fonts/
+│   ├── components/
+│   │   ├── elements/
+│   │   ├── layouts/
+│   │   └── onBoarding/
+│   ├── pages/
+│   ├── data/
+│   ├── states/
+│   ├── types/
+│   ├── App.tsx
+│   ├── index.css
+│   ├── vite-env.d.ts
+│   └── main.tsx
+├── index.html
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
 ```
