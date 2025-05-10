@@ -1,6 +1,6 @@
 # Onboarding Penulis untuk Buletin.co
 
-Proyek ini merupakan bagian dari proses seleksi teknis Basecamp, dengan memilih opsi tantangan nomor 2: "Mendesain alur onboarding untuk penulis buletin.co".
+Proyek ini merupakan bagian dari proses seleksi teknis Basecamp, dengan memilih opsi tantangan nomor 2: "Mendesain alur onboarding untuk penulis buletin.co". Proyek ini merupakan prototipe implementasi kode sederhana yang saya buat menggunakan React js dengan typescript.
 
 ## Tujuan
 
@@ -18,6 +18,7 @@ Membuat alur onboarding interaktif dan efisien bagi penulis baru di platform bul
 
 - Alur onboarding multi-step yang interaktif dengan animasi
 - Komponen UI yang modular dan dapat digunakan kembali
+- Full Responsive
 
 ## Cara Menjalankan Proyek
 
